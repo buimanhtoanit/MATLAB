@@ -11,7 +11,7 @@ function Recognition005_Digits_kNN()
     nNumber = randi([1 nTestImgs]);
     imgTest = imgTestAll(:,nNumber);
 
-    lblPredictTest = predict(Mdl,imgTest);
+    lblPredictTest = predict(Mdl,imgTest');
     lblImageTest = lblTestAll(nNumber);
     figure;
     img2D = reshape(imgTest,28,28);
